@@ -1,0 +1,108 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-16T23:02:04.004Z",
+        "line": 3,
+        "name": "get data and verify",
+        "description": "",
+        "id": "api-test;get-data-and-verify",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3025037300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "get data using with api endpoint",
+            "match": {
+              "location": "stepdefinitions.ApiStepDefs.get_data_using_with_api_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15625900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "verify if status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinitions.ApiStepDefs.verifyIfStatusCodeIs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 144076200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "verify response body",
+            "match": {
+              "location": "stepdefinitions.ApiStepDefs.verify_response_body(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "14"
+                ]
+              },
+              {
+                "cells": [
+                  "LAL"
+                ]
+              },
+              {
+                "cells": [
+                  "Los Angeles"
+                ]
+              },
+              {
+                "cells": [
+                  "West"
+                ]
+              },
+              {
+                "cells": [
+                  "Pacific"
+                ]
+              },
+              {
+                "cells": [
+                  "Los Angeles Lakers"
+                ]
+              },
+              {
+                "cells": [
+                  "Lakers"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      }
+    ],
+    "name": "Api test",
+    "description": "",
+    "id": "api-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/api.feature",
+    "tags": []
+  }
+]

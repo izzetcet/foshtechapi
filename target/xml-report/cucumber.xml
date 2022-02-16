@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.592">
+    <testcase classname="Api test" name="get data and verify" time="3.294">
+        <system-out>
+            <![CDATA[Given get data using with api endpoint......................................passed
+Then verify if status code is 200...........................................passed
+Then verify response body...................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
